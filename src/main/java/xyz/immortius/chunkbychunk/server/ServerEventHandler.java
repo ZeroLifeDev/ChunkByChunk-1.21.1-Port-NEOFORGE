@@ -193,31 +193,41 @@ public final class ServerEventHandler {
         }
     }
 
+    /**
+     * Registers a LevelStem into the registry without causing Duplicate key crashes.
+     * In 1.21.1, calling register() on an already-existing key crashes on world save.
+     * Instead, we use reflection to call bindValue() on the existing Holder.Reference,
+     * which safely replaces the stored value without touching the registry's key-lists.
+     */
+    private static void safeRegisterDimension(MappedRegistry<LevelStem> dimensions, ResourceKey<LevelStem> key, LevelStem stem) {
+        try {
+            java.lang.reflect.Method bindValueMethod = net.minecraft.core.Holder.Reference.class.getDeclaredMethod("bindValue", Object.class);
+            bindValueMethod.setAccessible(true);
+            java.util.Optional<net.minecraft.core.Holder.Reference<LevelStem>> holderOpt = dimensions.getHolder(key);
+            if (holderOpt.isPresent()) {
+                bindValueMethod.invoke(holderOpt.get(), stem);
+            } else {
+                dimensions.register(key, stem, RegistrationInfo.BUILT_IN);
+            }
+        } catch (Exception e) {
+            ChunkByChunkConstants.LOGGER.error("Failed to safely register dimension {}", key, e);
+        }
+    }
+
     private static SkyChunkGenerator setupCoreGenerationDimension(SkyDimensionData config, MappedRegistry<LevelStem> dimensions, Registry<Block> blocks, Registry<Biome> biomes, LevelStem level, ChunkGenerator rootGenerator) {
         ResourceLocation genDimensionId = config.getGenDimensionId();
         ResourceKey<LevelStem> genLevelId = ResourceKey.create(Registries.LEVEL_STEM, genDimensionId);
         LevelStem generationLevel = dimensions.get(genDimensionId);
         if (generationLevel == null) {
             generationLevel = new LevelStem(level.type(), rootGenerator);
-            dimensions.register(genLevelId, generationLevel, RegistrationInfo.BUILT_IN);
+            safeRegisterDimension(dimensions, genLevelId, generationLevel);
         }
 
         SkyChunkGenerator skyGenerator;
         if (!(level.generator() instanceof SkyChunkGenerator)) {
             skyGenerator = new SkyChunkGenerator(rootGenerator);
             LevelStem newLevelStem = new LevelStem(level.type(), skyGenerator);
-            try {
-                java.lang.reflect.Method bindValueMethod = net.minecraft.core.Holder.Reference.class.getDeclaredMethod("bindValue", Object.class);
-                bindValueMethod.setAccessible(true);
-                java.util.Optional<net.minecraft.core.Holder.Reference<LevelStem>> holderOpt = dimensions.getHolder(ResourceKey.create(Registries.LEVEL_STEM, ResourceLocation.parse(config.dimensionId)));
-                if (holderOpt.isPresent()) {
-                    bindValueMethod.invoke(holderOpt.get(), newLevelStem);
-                } else {
-                    dimensions.register(ResourceKey.create(Registries.LEVEL_STEM, ResourceLocation.parse(config.dimensionId)), newLevelStem, RegistrationInfo.BUILT_IN);
-                }
-            } catch (Exception e) {
-                ChunkByChunkConstants.LOGGER.error("Failed to bind new dimension generator value", e);
-            }
+            safeRegisterDimension(dimensions, ResourceKey.create(Registries.LEVEL_STEM, ResourceLocation.parse(config.dimensionId)), newLevelStem);
         } else {
             skyGenerator = (SkyChunkGenerator) level.generator();
         }
@@ -268,14 +278,7 @@ public final class ServerEventHandler {
         }
 
         LevelStem biomeLevel = new LevelStem(themeDimensionType, new NoiseBasedChunkGenerator(source, ChunkGeneratorAccess.getNoiseGeneratorSettings(rootGenerator)));
-        LevelStem existingStem = dimensions.get(levelKey);
-        if (existingStem != null) {
-            // dimensions.registerMapping is gone or changed. In 1.21.1, we might need to use a different approach for re-registration if possible.
-            // However, usually we can just register.
-            dimensions.register(levelKey, biomeLevel, RegistrationInfo.BUILT_IN);
-        } else {
-            dimensions.register(levelKey, biomeLevel, RegistrationInfo.BUILT_IN);
-        }
+        safeRegisterDimension(dimensions, levelKey, biomeLevel);
         return ResourceKey.create(Registries.DIMENSION, biomeDimId);
     }
 
