@@ -1,0 +1,98 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2026-04-19 14:58:11
+Description: Exception in server tick loop
+
+java.lang.ClassCastException: class net.minecraft.core.MappedRegistry cannot be cast to class xyz.immortius.chunkbychunk.mixins.DefrostedRegistry (net.minecraft.core.MappedRegistry is in module minecraft@1.21.1 of loader 'TRANSFORMER' @c6a6c1d; xyz.immortius.chunkbychunk.mixins.DefrostedRegistry is in module chunkbychunk@2.3.0 of loader 'TRANSFORMER' @c6a6c1d)
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.server.ServerEventHandler.applyChunkByChunkWorldGeneration(ServerEventHandler.java:121) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.server.ServerEventHandler.onServerStarting(ServerEventHandler.java:94) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.neoforge.ChunkByChunkMod.onServerStarting(ChunkByChunkMod.java:245) ~[%23191!/:?] {re:classloading}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.ConsumerEventHandler.invoke(ConsumerEventHandler.java:26) ~[bus-8.0.2.jar%23150!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:350) ~[bus-8.0.2.jar%23150!/:?] {}
+	at MC-BOOTSTRAP/net.neoforged.bus/net.neoforged.bus.EventBus.post(EventBus.java:315) ~[bus-8.0.2.jar%23150!/:?] {}
+	at TRANSFORMER/neoforge@21.1.180/net.neoforged.neoforge.server.ServerLifecycleHooks.handleServerAboutToStart(ServerLifecycleHooks.java:98) ~[neoforge-21.1.180.jar%23190!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:76) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:670) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.6, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 278122792 bytes (265 MiB) / 597688320 bytes (570 MiB) up to 4257218560 bytes (4060 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+	Identifier: Intel64 Family 6 Model 60 Stepping 3
+	Microarchitecture: Haswell (Client)
+	Frequency (GHz): 4.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) HD Graphics 4600
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 20.19.15.5171
+	Graphics card #1 name: NVIDIA GeForce GTX 1080 Ti
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 11264.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.8180
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 1.60
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 1.60
+	Memory slot #1 type: DDR3
+	Virtual memory max (MiB): 32618.24
+	Virtual memory used (MiB): 27318.82
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 943.87
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 1007.66, total: 236538.75
+	Space in storage for workdir (MiB): available: 1007.66, total: 236538.75
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 0 / 8; []
+	Active Data Packs: vanilla, mod_data, mod/chunkbychunk (incompatible), mod/neoforge, mod/jei (incompatible)
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/chunkbychunk (incompatible), mod/jei (incompatible), mod/neoforge, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 7637773793829214112
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.180
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.39.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.39.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.39.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		main                                              |Chunk By Chunk                |chunkbychunk                  |2.3.0               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.27.0.340.jar               |Just Enough Items             |jei                           |19.27.0.340         |Manifest: NOSIGNATURE
+		neoforge-21.1.180.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.180.jar                             |NeoForge                      |neoforge                      |21.1.180            |Manifest: NOSIGNATURE
+	Crash Report UUID: f9a4e663-e178-41b7-b17b-d94c20e66d86
+	FML: 4.0.39
+	NeoForge: 21.1.180

@@ -1,0 +1,119 @@
+---- Minecraft Crash Report ----
+// My bad.
+
+Time: 2026-04-19 14:14:36
+Description: Mod loading failures have occurred; consult the issue messages for more details
+
+net.neoforged.neoforge.logging.CrashReportExtender$ModLoadingCrashException: Mod loading has failed
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:593) ~[?:?] {}
+-- Mod loading issue for: chunkbychunk --
+Details:
+	Mod file: /C:/Users/diamo/.gemini/antigravity/scratch/chunkbychunk-neoforge-1.21.1/build/classes/java/main/
+	Failure message: Chunk By Chunk (chunkbychunk) has failed to load correctly
+		java.util.ServiceConfigurationError: xyz.immortius.chunkbychunk.interop.CBCPlatformHelper: Provider xyz.immortius.chunkbychunk.forge.ForgePlatformHelper not found
+	Mod version: 2.3.0
+	Mod issues URL: <No issues URL found>
+	Exception message: java.util.ServiceConfigurationError: xyz.immortius.chunkbychunk.interop.CBCPlatformHelper: Provider xyz.immortius.chunkbychunk.forge.ForgePlatformHelper not found
+Stacktrace:
+	at java.base/java.util.ServiceLoader.fail(ServiceLoader.java:593) ~[?:?] {}
+	at java.base/java.util.ServiceLoader.loadProvider(ServiceLoader.java:875) ~[?:?] {}
+	at java.base/java.util.ServiceLoader$ModuleServicesLookupIterator.hasNext(ServiceLoader.java:1084) ~[?:?] {}
+	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1309) ~[?:?] {}
+	at java.base/java.util.ServiceLoader$3.hasNext(ServiceLoader.java:1393) ~[?:?] {}
+	at java.base/java.util.ServiceLoader.findFirst(ServiceLoader.java:1812) ~[?:?] {}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.interop.Services.load(Services.java:14) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.interop.Services.<clinit>(Services.java:9) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.config.ChunkRewardChestContent.<clinit>(ChunkRewardChestContent.java:21) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.config.GenerationConfig.<init>(GenerationConfig.java:35) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.config.ChunkByChunkConfig.<init>(ChunkByChunkConfig.java:16) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.config.ChunkByChunkConfig.<clinit>(ChunkByChunkConfig.java:10) ~[%23191!/:?] {re:classloading}
+	at TRANSFORMER/chunkbychunk@2.3.0/xyz.immortius.chunkbychunk.neoforge.ChunkByChunkMod.<init>(ChunkByChunkMod.java:142) ~[%23191!/:?] {re:classloading}
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62) ~[?:?] {}
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502) ~[?:?] {}
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486) ~[?:?] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.39/net.neoforged.fml.javafmlmod.FMLModContainer.constructMod(FMLModContainer.java:115) ~[loader-4.0.39.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.39/net.neoforged.fml.ModLoader.lambda$constructMods$3(ModLoader.java:153) ~[loader-4.0.39.jar%23146!/:4.0] {}
+	at MC-BOOTSTRAP/fml_loader@4.0.39/net.neoforged.fml.ModLoader.lambda$dispatchParallelTask$7(ModLoader.java:231) ~[loader-4.0.39.jar%23146!/:4.0] {}
+	at java.base/java.util.concurrent.CompletableFuture.uniHandle(CompletableFuture.java:934) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$UniHandle.tryFire(CompletableFuture.java:911) ~[?:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:387) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1312) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1843) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1808) ~[?:?] {}
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:188) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.6, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 44103640 bytes (42 MiB) / 438304768 bytes (418 MiB) up to 4257218560 bytes (4060 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+	Identifier: Intel64 Family 6 Model 60 Stepping 3
+	Microarchitecture: Haswell (Client)
+	Frequency (GHz): 4.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) HD Graphics 4600
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 20.19.15.5171
+	Graphics card #1 name: NVIDIA GeForce GTX 1080 Ti
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 11264.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.8180
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 1.60
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 1.60
+	Memory slot #1 type: DDR3
+	Virtual memory max (MiB): 32618.24
+	Virtual memory used (MiB): 26838.84
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 552.58
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 43.29, total: 236538.75
+	Space in storage for workdir (MiB): available: 43.29, total: 236538.75
+	JVM Flags: 0 total; 
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.39.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.39.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.39.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		main                                              |Chunk By Chunk                |chunkbychunk                  |2.3.0               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.27.0.340.jar               |Just Enough Items             |jei                           |19.27.0.340         |Manifest: NOSIGNATURE
+		neoforge-21.1.180.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.180.jar                             |NeoForge                      |neoforge                      |21.1.180            |Manifest: NOSIGNATURE
+	Crash Report UUID: 82e4d40a-7130-461c-89fd-85cf18a0ef27
+	FML: 4.0.39
+	NeoForge: 21.1.180

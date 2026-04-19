@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="${neoforge_loader_version_range}"
+license="${mod_license}"
+
+[[mods]]
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
+updateJSONURL="https://immortius.xyz/chunkbychunk/updates.json"
+displayURL="https://immortius.xyz/chunkbychunk"
+logoFile="logo.png"
+credits="Sound effects from Kenny (www.kenney.nl)"
+authors="${mod_author}"
+description='''${mod_description}'''
+
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="${neoforge_loader_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="minecraft"
+    type="required"
+    versionRange="${minecraft_version_range}"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+config="chunkbychunk.mixins.json"
+

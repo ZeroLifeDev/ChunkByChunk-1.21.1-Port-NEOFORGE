@@ -1,0 +1,32 @@
+modLoader="javafml"
+loaderVersion="[2,)"
+license="MIT"
+
+[[mods]]
+modId="chunkbychunk"
+version="2.3.0"
+displayName="Chunk By Chunk"
+updateJSONURL="https://immortius.xyz/chunkbychunk/updates.json"
+displayURL="https://immortius.xyz/chunkbychunk"
+logoFile="logo.png"
+credits="Sound effects from Kenny (www.kenney.nl)"
+authors="Immortius"
+description='''Processes main resources.'''
+
+[[dependencies.chunkbychunk]]
+    modId="neoforge"
+    type="required"
+    versionRange="[2,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.chunkbychunk]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21, 1.22)"
+    ordering="NONE"
+    side="BOTH"
+
+[[mixins]]
+config="chunkbychunk.mixins.json"
+

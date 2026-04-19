@@ -1,0 +1,20 @@
+{
+  "type" : "minecraft:crafting_shaped",
+  "pattern": [
+    " C ",
+    "CXC",
+    " C "
+  ],
+  "key" : {
+    "C" : {
+      "item" : "minecraft:copper_ingot"
+    },
+    "X" : {
+      "item" : "chunkbychunk:worldcore"
+    }
+  },
+  "result" : {
+    "id" : "chunkbychunk:chunkspawner",
+    "count" : 1
+  }
+}

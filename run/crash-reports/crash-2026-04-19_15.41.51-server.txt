@@ -1,0 +1,108 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2026-04-19 15:41:51
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Duplicate key ResourceKey[minecraft:dimension / minecraft:the_nether] (attempted merging values LevelStem[type=Reference{ResourceKey[minecraft:dimension_type / minecraft:the_nether]=DimensionType[fixedTime=OptionalLong[18000], hasSkyLight=false, hasCeiling=true, ultraWarm=true, natural=false, coordinateScale=8.0, bedWorks=false, respawnAnchorWorks=true, minY=0, height=256, logicalHeight=128, infiniburn=TagKey[minecraft:block / minecraft:infiniburn_nether], effectsLocation=minecraft:the_nether, ambientLight=0.1, monsterSettings=MonsterSettings[piglinSafe=true, hasRaids=false, monsterSpawnLightTest=7, monsterSpawnBlockLightLimit=15]]}, generator=xyz.immortius.chunkbychunk.server.world.SkyChunkGenerator@6adf94d3] and LevelStem[type=Reference{ResourceKey[minecraft:dimension_type / minecraft:the_nether]=DimensionType[fixedTime=OptionalLong[18000], hasSkyLight=false, hasCeiling=true, ultraWarm=true, natural=false, coordinateScale=8.0, bedWorks=false, respawnAnchorWorks=true, minY=0, height=256, logicalHeight=128, infiniburn=TagKey[minecraft:block / minecraft:infiniburn_nether], effectsLocation=minecraft:the_nether, ambientLight=0.1, monsterSettings=MonsterSettings[piglinSafe=true, hasRaids=false, monsterSpawnLightTest=7, monsterSpawnBlockLightLimit=15]]}, generator=xyz.immortius.chunkbychunk.server.world.SkyChunkGenerator@6adf94d3])
+	at java.base/java.util.stream.Collectors.duplicateKeyException(Collectors.java:135) ~[?:?] {}
+	at java.base/java.util.stream.Collectors.lambda$uniqKeysMapAccumulator$1(Collectors.java:182) ~[?:?] {}
+	at java.base/java.util.stream.ReduceOps$3ReducingSink.accept(ReduceOps.java:169) ~[?:?] {}
+	at MC-BOOTSTRAP/it.unimi.dsi.fastutil@8.5.12/it.unimi.dsi.fastutil.objects.ObjectArrayList$Spliterator.forEachRemaining(ObjectArrayList.java:955) ~[fastutil-8.5.12.jar%23137!/:?] {}
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[?:?] {}
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921) ~[?:?] {}
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[?:?] {}
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682) ~[?:?] {}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.WorldDimensions.<init>(WorldDimensions.java:57) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.levelgen.WorldGenSettings.encode(WorldGenSettings.java:22) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.storage.PrimaryLevelData.setTagData(PrimaryLevelData.java:237) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.storage.PrimaryLevelData.createTag(PrimaryLevelData.java:218) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.world.level.storage.LevelStorageSource$LevelStorageAccess.saveDataTag(LevelStorageSource.java:508) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.saveAllChunks(MinecraftServer.java:559) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.saveEverything(MinecraftServer.java:576) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.saveEverything(IntegratedServer.java:303) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:98) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:707) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:accesstransformer:B}
+	at TRANSFORMER/minecraft@1.21.1/net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:267) ~[neoforge-21.1.180.jar%23189!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.base/java.lang.Thread.run(Thread.java:1583) [?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.21.1
+	Minecraft Version ID: 1.21.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 21.0.6, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 379128960 bytes (361 MiB) / 2046820352 bytes (1952 MiB) up to 4257218560 bytes (4060 MiB)
+	CPUs: 8
+	Processor Vendor: GenuineIntel
+	Processor Name: Intel(R) Core(TM) i7-4790K CPU @ 4.00GHz
+	Identifier: Intel64 Family 6 Model 60 Stepping 3
+	Microarchitecture: Haswell (Client)
+	Frequency (GHz): 4.00
+	Number of physical packages: 1
+	Number of physical CPUs: 4
+	Number of logical CPUs: 8
+	Graphics card #0 name: Intel(R) HD Graphics 4600
+	Graphics card #0 vendor: Intel Corporation
+	Graphics card #0 VRAM (MiB): 1024.00
+	Graphics card #0 deviceId: VideoController1
+	Graphics card #0 versionInfo: 20.19.15.5171
+	Graphics card #1 name: NVIDIA GeForce GTX 1080 Ti
+	Graphics card #1 vendor: NVIDIA
+	Graphics card #1 VRAM (MiB): 11264.00
+	Graphics card #1 deviceId: VideoController2
+	Graphics card #1 versionInfo: 32.0.15.8180
+	Memory slot #0 capacity (MiB): 8192.00
+	Memory slot #0 clockSpeed (GHz): 1.60
+	Memory slot #0 type: DDR3
+	Memory slot #1 capacity (MiB): 8192.00
+	Memory slot #1 clockSpeed (GHz): 1.60
+	Memory slot #1 type: DDR3
+	Virtual memory max (MiB): 32618.24
+	Virtual memory used (MiB): 29105.66
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 861.36
+	Space in storage for jna.tmpdir (MiB): <path not set>
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): <path not set>
+	Space in storage for io.netty.native.workdir (MiB): <path not set>
+	Space in storage for java.io.tmpdir (MiB): available: 940.75, total: 236538.75
+	Space in storage for workdir (MiB): available: 940.75, total: 236538.75
+	JVM Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/69, l='ServerLevel[dont crash plz]', x=344.68, y=112.00, z=-533.16]]
+	Active Data Packs: vanilla, mod_data, mod/chunkbychunk (incompatible), mod/neoforge, mod/jei (incompatible)
+	Available Data Packs: bundle, trade_rebalance, vanilla, mod/chunkbychunk (incompatible), mod/jei (incompatible), mod/neoforge, mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 2905067539121678745
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Launched Version: 21.1.180
+	ModLauncher: 11.0.5+main.901c6ea8
+	ModLauncher launch target: forgeclientdev
+	ModLauncher services: 
+		sponge-mixin-0.15.2+mixin.0.8.7.jar mixin PLUGINSERVICE 
+		loader-4.0.39.jar slf4jfixer PLUGINSERVICE 
+		loader-4.0.39.jar runtime_enum_extender PLUGINSERVICE 
+		at-modlauncher-10.0.1.jar accesstransformer PLUGINSERVICE 
+		loader-4.0.39.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-11.0.5.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-11.0.5.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		javafml@4.0
+		lowcodefml@4.0
+		minecraft@4.0
+	Mod List: 
+		main                                              |Chunk By Chunk                |chunkbychunk                  |2.3.0               |Manifest: NOSIGNATURE
+		jei-1.21.1-neoforge-19.27.0.340.jar               |Just Enough Items             |jei                           |19.27.0.340         |Manifest: NOSIGNATURE
+		neoforge-21.1.180.jar                             |Minecraft                     |minecraft                     |1.21.1              |Manifest: NOSIGNATURE
+		neoforge-21.1.180.jar                             |NeoForge                      |neoforge                      |21.1.180            |Manifest: NOSIGNATURE
+	Crash Report UUID: f552b76f-42a7-4a09-959f-ece67cd93ad1
+	FML: 4.0.39
+	NeoForge: 21.1.180
