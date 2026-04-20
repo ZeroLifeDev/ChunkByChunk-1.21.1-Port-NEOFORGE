@@ -1,4 +1,3 @@
-C:\Users\diamo\.gemini\antigravity\scratch\chunkbychunk-neoforge-1.21.1\build\moddev\artifacts\neoforge-21.1.180-client-extra-aka-minecraft-resources.jar
 C:\Users\diamo\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\core\3.8.2\94eee571e1524129804d08c75f6416a3be380ad4\core-3.8.2.jar
 C:\Users\diamo\.gradle\caches\modules-2\files-2.1\com.electronwill.night-config\toml\3.8.2\c128842f759692f613ea6c3ef0ef052273bbb38c\toml-3.8.2.jar
 C:\Users\diamo\.gradle\caches\modules-2\files-2.1\com.github.oshi\oshi-core\6.4.10\b1d8ab82d11d92fd639b56d639f8f46f739dd5fa\oshi-core-6.4.10.jar
@@ -105,3 +104,4 @@ C:\Users\diamo\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-tree\9.7\e446a
 C:\Users\diamo\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm-util\9.7\c0655519f24d92af2202cb681cd7c1569df6ead6\asm-util-9.7.jar
 C:\Users\diamo\.gradle\caches\modules-2\files-2.1\org.ow2.asm\asm\9.7\73d7b3086e14beb604ced229c302feff6449723\asm-9.7.jar
 C:\Users\diamo\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-api\2.0.9\7cf2726fdcfbc8610f9a71fb3ed639871f315340\slf4j-api-2.0.9.jar
+I:\ChunkByChunk-1.21.1-Port-NEOFORGE-1\build\moddev\artifacts\neoforge-21.1.180-client-extra-aka-minecraft-resources.jar

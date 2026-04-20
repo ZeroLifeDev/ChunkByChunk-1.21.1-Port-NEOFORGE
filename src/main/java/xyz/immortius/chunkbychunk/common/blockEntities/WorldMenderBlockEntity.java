@@ -108,6 +108,7 @@ public class WorldMenderBlockEntity extends BaseContainerBlockEntity implements 
                     SpawnChunkBlock spawnChunkBlock = entity.getInputChunkBlock();
                     if (ChunkSpawnController.get(serverLevel.getServer()).request(serverLevel, spawnChunkBlock.getBiomeTheme(), spawnChunkBlock.isRandom(), pos)) {
                         entity.getItem(SLOT_INPUT).shrink(1);
+                        entity.setChanged();
                     }
                     entity.cooldown = ChunkByChunkConfig.get().getWorldMenderConfig().getCooldown();
                     return;

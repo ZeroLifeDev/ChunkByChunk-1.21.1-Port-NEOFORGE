@@ -179,7 +179,10 @@ public class WorldScannerBlockEntity extends BaseFueledBlockEntity {
             // Process fuel
             if (entity.getRemainingFuel() > 0) {
                 int consumeAmount = entity.consumeFuel(ChunkByChunkConfig.get().getWorldScannerConfig().getFuelConsumedPerTick());
-                entity.scanCharge += consumeAmount;
+                if (consumeAmount > 0) {
+                    entity.scanCharge += consumeAmount;
+                    changed = true;
+                }
             }
             changed = entity.checkConsumeFuelItem();
 

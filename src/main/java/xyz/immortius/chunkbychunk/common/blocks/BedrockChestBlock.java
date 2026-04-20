@@ -16,12 +16,8 @@ import net.minecraft.world.level.block.entity.ChestBlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.chunk.LevelChunk;
 import net.minecraft.world.phys.BlockHitResult;
-import xyz.immortius.chunkbychunk.common.ChunkByChunkConstants;
 import xyz.immortius.chunkbychunk.common.blockEntities.BedrockChestBlockEntity;
 import xyz.immortius.chunkbychunk.config.ChunkByChunkConfig;
-import xyz.immortius.chunkbychunk.interop.Services;
-
-import java.util.function.Supplier;
 
 /**
  * A Bedrock Chest is a chest made of Bedrock that can only be opened if the chunk above it is cleared - with

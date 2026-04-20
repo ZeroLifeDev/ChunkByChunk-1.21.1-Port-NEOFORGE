@@ -35,22 +35,21 @@ public class SpawnChunkCommand {
     private static final SimpleCommandExceptionType NON_EMPTY_CHUNK = new SimpleCommandExceptionType(Component.translatable("commands.chunkbychunk.spawnchunk.nonemptychunk"));
 
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
-        LiteralCommandNode<CommandSourceStack> spawnChunkCommand = dispatcher.register(Commands.literal("chunkbychunk:spawnChunk")
+        dispatcher.register(Commands.literal("chunkbychunk:spawnChunk")
                 .requires(x -> x.hasPermission(2))
                 .then(Commands.argument("location", Vec3Argument.vec3())
                 .executes((cmd) -> spawnChunk(cmd.getSource(), cmd.getSource().getLevel(), Vec3Argument.getCoordinates(cmd, "location"), false))));
 
-        LiteralCommandNode<CommandSourceStack> spawnRandomChunkCommand = dispatcher.register(Commands.literal("chunkbychunk:spawnRandomChunk")
+        dispatcher.register(Commands.literal("chunkbychunk:spawnRandomChunk")
                 .requires(x -> x.hasPermission(2))
                 .then(Commands.argument("location", Vec3Argument.vec3())
                         .executes((cmd) -> spawnChunk(cmd.getSource(), cmd.getSource().getLevel(), Vec3Argument.getCoordinates(cmd, "location"), true))));
 
-        LiteralCommandNode<CommandSourceStack> spawnBiomeChunkCommand = dispatcher.register(Commands.literal("chunkbychunk:spawnThemedChunk")
+        dispatcher.register(Commands.literal("chunkbychunk:spawnThemedChunk")
                 .requires(x -> x.hasPermission(2))
                 .then(Commands.argument("theme", StringArgumentType.word()).suggests(new BiomeThemeSuggestionProvider())
                         .then(Commands.argument("location", Vec3Argument.vec3())
-                                .executes((cmd) -> spawnThemedChunk(cmd.getSource(), cmd.getSource().getLevel(), StringArgumentType.getString(cmd, "theme"), Vec3Argument.getCoordinates(cmd, "location"))))))
-                ;
+                                .executes((cmd) -> spawnThemedChunk(cmd.getSource(), cmd.getSource().getLevel(), StringArgumentType.getString(cmd, "theme"), Vec3Argument.getCoordinates(cmd, "location"))))));
     }
 
     private static class BiomeThemeSuggestionProvider implements SuggestionProvider<CommandSourceStack> {

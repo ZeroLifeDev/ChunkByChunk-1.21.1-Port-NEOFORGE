@@ -130,10 +130,14 @@ public class WorldForgeBlockEntity extends BaseFueledBlockEntity {
     }
 
     public static void serverTick(Level level, BlockPos blockPos, BlockState blockState, WorldForgeBlockEntity entity) {
+        boolean changed = false;
         // Consume available fuel
         if (entity.getRemainingFuel() > 0) {
             int consumeAmount = entity.consumeFuel(ChunkByChunkConfig.get().getWorldForge().getProductionRate());
-            entity.progress += consumeAmount;
+            if (consumeAmount > 0) {
+                entity.progress += consumeAmount;
+                changed = true;
+            }
         }
 
         // Determine what crystal we're making and its cost
@@ -150,7 +154,11 @@ public class WorldForgeBlockEntity extends BaseFueledBlockEntity {
             return;
         }
 
-        boolean changed = entity.checkConsumeFuelItem();
+        changed |= entity.checkConsumeFuelItem();
+
+        if (!CRYSTAL_COSTS.containsKey(producingItem)) {
+            return;
+        }
 
         int itemCost = CRYSTAL_COSTS.get(producingItem).get();
         Item nextItem = CRYSTAL_STEPS.get(producingItem);

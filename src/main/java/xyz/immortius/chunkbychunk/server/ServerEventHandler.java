@@ -8,10 +8,9 @@ import com.google.gson.JsonDeserializer;
 import com.mojang.datafixers.util.Pair;
 import com.mojang.serialization.Lifecycle;
 import net.minecraft.core.*;
-import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.core.RegistrationInfo;
+import net.minecraft.core.registries.Registries;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.packs.resources.Resource;
@@ -344,6 +343,8 @@ public final class ServerEventHandler {
             case Biome -> {
                 String startingBiome = ChunkByChunkConfig.get().getGameplayConfig().getStartingBiome();
                 spawnPos = findBiome(overworldLevel, registryAccess, spawnPos, startingBiome);
+            }
+            case None -> {
             }
         }
 

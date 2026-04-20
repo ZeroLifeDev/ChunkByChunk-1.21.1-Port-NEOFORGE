@@ -1,298 +1,218 @@
-[19Apr2026 15:45:17.768] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.180, --assetIndex, 17, --assetsDir, C:\\Users\\diamo\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.180, --fml.neoFormVersion, 20240808.144430]
-[19Apr2026 15:45:17.773] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
-[19Apr2026 15:45:17.774] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.6 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[19Apr2026 15:45:17.924] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
-[19Apr2026 15:45:18.177] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
-[19Apr2026 15:45:18.464] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
-[19Apr2026 15:45:18.709] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/diamo/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
-[19Apr2026 15:45:19.023] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 581.80, NVIDIA Corporation
-[19Apr2026 15:45:19.289] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
-[19Apr2026 15:45:19.293] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
+[20Apr2026 12:02:29.066] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgeclientdev, --version, 21.1.180, --assetIndex, 17, --assetsDir, C:\\Users\\diamo\\.gradle\\caches\\neoformruntime\\assets, --gameDir, ., --fml.fmlVersion, 4.0.39, --fml.mcVersion, 1.21.1, --fml.neoForgeVersion, 21.1.180, --fml.neoFormVersion, 20240808.144430]
+[20Apr2026 12:02:29.074] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: JVM identified as Eclipse Adoptium OpenJDK 64-Bit Server VM 21.0.6+7-LTS
+[20Apr2026 12:02:29.076] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 11.0.5+main.901c6ea8 starting: java version 21.0.6 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[20Apr2026 12:02:29.246] [main/INFO] [net.neoforged.fml.loading.ImmediateWindowHandler/]: Loading ImmediateWindowProvider fmlearlywindow
+[20Apr2026 12:02:29.493] [main/INFO] [EARLYDISPLAY/]: Trying GL version 4.6
+[20Apr2026 12:02:29.759] [main/INFO] [EARLYDISPLAY/]: Requested GL version 4.6 got version 4.6
+[20Apr2026 12:02:29.891] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.7 Source=union:/C:/Users/diamo/.gradle/caches/modules-2/files-2.1/net.fabricmc/sponge-mixin/0.15.2+mixin.0.8.7/2af2f021d8e02a0220dc27a7a72b4666d66d44ca/sponge-mixin-0.15.2+mixin.0.8.7.jar%23138!/ Service=ModLauncher Env=CLIENT
+[20Apr2026 12:02:30.282] [pool-2-thread-1/INFO] [EARLYDISPLAY/]: GL info: NVIDIA GeForce GTX 1080 Ti/PCIe/SSE2 GL version 4.6.0 NVIDIA 581.80, NVIDIA Corporation
+[20Apr2026 12:02:30.575] [main/INFO] [net.neoforged.fml.loading.moddiscovery.locators.JarInJarDependencyLocator/]: Found 2 dependencies adding them to mods collection
+[20Apr2026 12:02:30.577] [main/INFO] [net.neoforged.fml.loading.moddiscovery.ModDiscoverer/]: 
      Mod List:
 		Name Version (Mod Id)
 
-		Chunk By Chunk 2.3.0 (chunkbychunk)
+		Chunk By Chunk 2.3.1 (chunkbychunk)
 		Just Enough Items 19.27.0.340 (jei)
 		Minecraft 1.21.1 (minecraft)
 		NeoForge 21.1.180 (neoforge)
-[19Apr2026 15:45:20.639] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
-[19Apr2026 15:45:20.645] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.180, --gameDir, ., --assetsDir, C:\Users\diamo\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
-[19Apr2026 15:45:20.716] [main/WARN] [mixin/]: Reference map 'chunkbychunk.refmap.json' for chunkbychunk.mixins.json could not be read. If this is a development environment you can ignore this message
-[19Apr2026 15:45:23.468] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 774 milliseconds
-[19Apr2026 15:45:23.678] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
-[19Apr2026 15:45:30.249] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2026 15:45:30.252] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2026 15:45:30.255] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Apr2026 15:45:30.258] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[19Apr2026 15:45:30.260] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[19Apr2026 15:45:30.407] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/diamo/.gemini/antigravity/scratch/chunkbychunk-neoforge-1.21.1/build/moddev/artifacts/neoforge-21.1.180.jar%23189!/assets/.mcassetsroot' uses unexpected schema
-[19Apr2026 15:45:30.408] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/diamo/.gemini/antigravity/scratch/chunkbychunk-neoforge-1.21.1/build/moddev/artifacts/neoforge-21.1.180.jar%23189!/data/.mcassetsroot' uses unexpected schema
-[19Apr2026 15:45:30.446] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
-[19Apr2026 15:45:30.461] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
-[19Apr2026 15:45:30.609] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
-[19Apr2026 15:45:30.877] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.180, for MC 1.21.1
-[19Apr2026 15:45:31.135] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
-[19Apr2026 15:45:31.212] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 74.39 milliseconds
-[19Apr2026 15:45:32.046] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [chunkbychunk]
-[19Apr2026 15:45:32.208] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/chunkbychunk, mod/neoforge, mod/jei
-[19Apr2026 15:45:32.291] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [chunkbychunk] Starting version check at https://immortius.xyz/chunkbychunk/updates.json
-[19Apr2026 15:45:32.362] [Worker-Main-5/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
-[19Apr2026 15:45:32.770] [Worker-Main-7/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
-[19Apr2026 15:45:33.773] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [chunkbychunk] Found status: BETA Current: 2.3.0 Target: null
-[19Apr2026 15:45:34.586] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
-[19Apr2026 15:45:34.587] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
-[19Apr2026 15:45:34.776] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (High Definition Audio Device)
-[19Apr2026 15:45:34.777] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
-[19Apr2026 15:45:34.970] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
-[19Apr2026 15:45:34.990] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
-[19Apr2026 15:45:34.992] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
-[19Apr2026 15:45:34.993] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
-[19Apr2026 15:45:34.995] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
-[19Apr2026 15:45:35.004] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
-[19Apr2026 15:45:35.005] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
-[19Apr2026 15:45:35.006] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
-[19Apr2026 15:45:35.007] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
-[19Apr2026 15:45:35.341] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
-[19Apr2026 15:45:35.343] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
-[19Apr2026 15:45:35.344] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
-[19Apr2026 15:45:35.344] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
-[19Apr2026 15:45:35.345] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
-[19Apr2026 15:45:35.379] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
-[19Apr2026 15:45:35.465] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
-[19Apr2026 15:45:35.465] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
-[19Apr2026 15:46:08.126] [Worker-Main-5/INFO] [chunkbychunk/]: Registering resource reload listeners
-[19Apr2026 15:46:08.470] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1313 recipes
-[19Apr2026 15:46:08.802] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1410 advancements
-[19Apr2026 15:46:08.805] [Render thread/INFO] [chunkbychunk/]: Loading resources
-[19Apr2026 15:46:08.822] [Render thread/INFO] [chunkbychunk/]: Loaded 8 scanner data configs
-[19Apr2026 15:46:08.826] [Render thread/INFO] [chunkbychunk/]: Loaded 2 sky dimensions
-[19Apr2026 15:46:17.498] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
-[19Apr2026 15:46:17.499] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
-[19Apr2026 15:46:17.684] [Server thread/INFO] [chunkbychunk/]: Setting up sky dimensions
-[19Apr2026 15:46:17.686] [Server thread/INFO] [chunkbychunk/]: Setting up sky dimension for minecraft:the_nether
-[19Apr2026 15:46:17.689] [Server thread/INFO] [chunkbychunk/]: Setting up sky dimension for minecraft:overworld
-[19Apr2026 15:46:33.516] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
-[19Apr2026 15:46:34.851] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
-[19Apr2026 15:46:34.855] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 1336 ms
-[19Apr2026 15:46:35.936] [Server thread/INFO] [chunkbychunk/]: Spawn shifted to nearest village
-[19Apr2026 15:46:40.449] [Server thread/INFO] [chunkbychunk/]: Found appropriate spawn chunk in 8 attempts
-[19Apr2026 15:46:44.058] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:46:44.058] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
-[19Apr2026 15:46:44.058] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
-[19Apr2026 15:46:45.291] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:3a5d7fba] logged in with entity id 243 at (-364.5, 63.0, -1096.5)
-[19Apr2026 15:46:45.357] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
-[19Apr2026 15:46:45.538] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
-[19Apr2026 15:46:45.548] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
-[19Apr2026 15:46:45.560] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering item subtypes: jei:minecraft took 11.42 milliseconds
-[19Apr2026 15:46:45.560] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 12.50 milliseconds
-[19Apr2026 15:46:45.561] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
-[19Apr2026 15:46:45.563] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 1.450 milliseconds
-[19Apr2026 15:46:45.565] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
-[19Apr2026 15:46:45.997] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 430.3 milliseconds
-[19Apr2026 15:46:45.997] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 431.2 milliseconds
-[19Apr2026 15:46:45.998] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
-[19Apr2026 15:46:45.998] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 318.7 microseconds
-[19Apr2026 15:46:46.000] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
-[19Apr2026 15:46:46.001] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 791.6 microseconds
-[19Apr2026 15:46:46.017] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
-[19Apr2026 15:46:46.018] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 378.8 microseconds
-[19Apr2026 15:46:46.122] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
-[19Apr2026 15:46:46.136] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 13.05 milliseconds
-[19Apr2026 15:46:46.147] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 24.40 milliseconds
-[19Apr2026 15:46:46.148] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
-[19Apr2026 15:46:46.151] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.328 milliseconds
-[19Apr2026 15:46:46.152] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
-[19Apr2026 15:46:46.152] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 886.3 microseconds
-[19Apr2026 15:46:46.154] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
-[19Apr2026 15:46:46.288] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 134.0 milliseconds
-[19Apr2026 15:46:46.290] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
-[19Apr2026 15:46:46.292] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 312.0 microseconds
-[19Apr2026 15:46:46.293] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
-[19Apr2026 15:46:46.542] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 249.0 milliseconds
-[19Apr2026 15:46:46.592] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 41.74 milliseconds
-[19Apr2026 15:46:46.592] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 300.0 milliseconds
-[19Apr2026 15:46:46.600] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
-[19Apr2026 15:46:46.604] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 3.403 milliseconds
-[19Apr2026 15:46:46.620] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
-[19Apr2026 15:46:46.626] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
-[19Apr2026 15:46:46.633] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 7.414 milliseconds
-[19Apr2026 15:46:46.637] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
-[19Apr2026 15:46:46.640] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
-[19Apr2026 15:46:46.641] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
-[19Apr2026 15:46:46.671] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 30.97 milliseconds
-[19Apr2026 15:46:46.673] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
-[19Apr2026 15:46:46.711] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1708 ingredients
-[19Apr2026 15:46:47.016] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1708 ingredients
-[19Apr2026 15:46:47.017] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 343.7 milliseconds
-[19Apr2026 15:46:47.130] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 491.5 milliseconds
-[19Apr2026 15:46:47.130] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 492.7 milliseconds
-[19Apr2026 15:46:47.134] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 513.6 milliseconds
-[19Apr2026 15:46:47.135] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
-[19Apr2026 15:46:47.136] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 708.9 microseconds
-[19Apr2026 15:46:47.136] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.598 seconds
-[19Apr2026 15:46:47.161] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 3 advancements
-[19Apr2026 15:46:48.262] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-23, -69] in minecraft:overworld
-[19Apr2026 15:46:51.657] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:46:53.348] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Apr2026 15:46:53.369] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:overworld
-[19Apr2026 15:46:53.513] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:netherchunkgeneration
-[19Apr2026 15:46:53.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_rocky_gen
-[19Apr2026 15:46:53.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_savanna_gen
-[19Apr2026 15:46:53.543] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_nether
-[19Apr2026 15:46:53.581] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:skychunkgeneration
-[19Apr2026 15:46:53.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_forest_gen
-[19Apr2026 15:46:53.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_snow_gen
-[19Apr2026 15:46:53.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_jungle_gen
-[19Apr2026 15:46:53.583] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_end
-[19Apr2026 15:46:53.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mushroom_gen
-[19Apr2026 15:46:53.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_desert_gen
-[19Apr2026 15:46:53.584] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_swamp_gen
-[19Apr2026 15:46:53.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mountain_gen
-[19Apr2026 15:46:53.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_badlands_gen
-[19Apr2026 15:46:53.585] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_plains_gen
-[19Apr2026 15:46:55.898] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Apr2026 15:46:55.911] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:overworld
-[19Apr2026 15:46:55.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:netherchunkgeneration
-[19Apr2026 15:46:55.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_rocky_gen
-[19Apr2026 15:46:55.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_savanna_gen
-[19Apr2026 15:46:55.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_nether
-[19Apr2026 15:46:55.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:skychunkgeneration
-[19Apr2026 15:46:55.914] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_forest_gen
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_snow_gen
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_jungle_gen
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_end
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mushroom_gen
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_desert_gen
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_swamp_gen
-[19Apr2026 15:46:55.915] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mountain_gen
-[19Apr2026 15:46:55.916] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_badlands_gen
-[19Apr2026 15:46:55.916] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_plains_gen
-[19Apr2026 15:46:57.098] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Apr2026 15:46:57.113] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:overworld
-[19Apr2026 15:46:57.215] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:netherchunkgeneration
-[19Apr2026 15:46:57.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_rocky_gen
-[19Apr2026 15:46:57.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_savanna_gen
-[19Apr2026 15:46:57.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_nether
-[19Apr2026 15:46:57.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:skychunkgeneration
-[19Apr2026 15:46:57.216] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_forest_gen
-[19Apr2026 15:46:57.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_snow_gen
-[19Apr2026 15:46:57.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_jungle_gen
-[19Apr2026 15:46:57.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_end
-[19Apr2026 15:46:57.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mushroom_gen
-[19Apr2026 15:46:57.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_desert_gen
-[19Apr2026 15:46:57.217] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_swamp_gen
-[19Apr2026 15:46:57.219] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mountain_gen
-[19Apr2026 15:46:57.219] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_badlands_gen
-[19Apr2026 15:46:57.219] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_plains_gen
-[19Apr2026 15:47:17.159] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 12 advancements
-[19Apr2026 15:47:17.799] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Minecraft: Trial(s) Edition]
-[19Apr2026 15:47:17.826] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has made the advancement [Minecraft: Trial(s) Edition]
-[19Apr2026 15:47:17.855] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 20 advancements
-[19Apr2026 15:47:43.956] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 26 advancements
-[19Apr2026 15:47:44.656] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 27 advancements
-[19Apr2026 15:47:51.116] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-23, -68] in minecraft:overworld
-[19Apr2026 15:47:51.122] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-23, -68]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:47:53.776] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:47:57.529] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-24, -69] in minecraft:overworld
-[19Apr2026 15:47:57.538] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-24, -69]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:47:59.419] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:04.541] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-24, -68] in minecraft:overworld
-[19Apr2026 15:48:04.562] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-24, -68]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:07.921] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:15.298] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-23, -67] in minecraft:overworld
-[19Apr2026 15:48:15.303] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-23, -67]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:17.266] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:20.365] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-24, -67] in minecraft:overworld
-[19Apr2026 15:48:20.370] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-24, -67]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:22.170] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:27.772] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-23, -66] in minecraft:overworld
-[19Apr2026 15:48:27.777] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-23, -66]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:29.769] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:40.755] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-24, -66] in minecraft:overworld
-[19Apr2026 15:48:40.766] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-24, -66]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:44.168] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:47.510] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.cod.ambient
-[19Apr2026 15:48:48.308] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Unable to play empty soundEvent: minecraft:entity.salmon.ambient
-[19Apr2026 15:48:52.415] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-23, -70] in minecraft:overworld
-[19Apr2026 15:48:52.456] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-23, -70]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:55.119] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:48:56.958] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-24, -70] in minecraft:overworld
-[19Apr2026 15:48:56.965] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-24, -70]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:48:59.613] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:49:03.064] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-23, -71] in minecraft:overworld
-[19Apr2026 15:49:03.120] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-23, -71]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:49:05.748] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-22, -70] in minecraft:overworld
-[19Apr2026 15:49:05.797] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-22, -70]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:49:08.422] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:49:12.665] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-22, -69] in minecraft:overworld
-[19Apr2026 15:49:12.718] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-22, -69]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:49:15.381] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:49:17.204] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-22, -68] in minecraft:overworld
-[19Apr2026 15:49:19.864] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:49:21.704] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-22, -67] in minecraft:overworld
-[19Apr2026 15:49:21.712] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-22, -67]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:49:24.367] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:49:26.611] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-22, -66] in minecraft:overworld
-[19Apr2026 15:49:26.667] [Server thread/INFO] [chunkbychunk/]: Biomes updated for chunk [-22, -66]. Chunk reload skipped temporarily due to mixin removal.
-[19Apr2026 15:49:29.317] [Server thread/INFO] [chunkbychunk/]: Spawning chunk [-3, -9] in minecraft:the_nether
-[19Apr2026 15:49:29.997] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
-[19Apr2026 15:49:30.006] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:overworld
-[19Apr2026 15:49:30.017] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:netherchunkgeneration
-[19Apr2026 15:49:30.018] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_rocky_gen
-[19Apr2026 15:49:30.018] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_savanna_gen
-[19Apr2026 15:49:30.019] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_nether
-[19Apr2026 15:49:30.019] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:skychunkgeneration
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_forest_gen
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_snow_gen
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_jungle_gen
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_end
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mushroom_gen
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_desert_gen
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_swamp_gen
-[19Apr2026 15:49:30.020] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mountain_gen
-[19Apr2026 15:49:30.021] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_badlands_gen
-[19Apr2026 15:49:30.021] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_plains_gen
-[19Apr2026 15:49:30.844] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
-[19Apr2026 15:49:30.848] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
-[19Apr2026 15:49:30.848] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
-[19Apr2026 15:49:30.849] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
-[19Apr2026 15:49:30.851] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 2.425 milliseconds
-[19Apr2026 15:49:30.901] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
-[19Apr2026 15:49:30.901] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
-[19Apr2026 15:49:30.911] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
-[19Apr2026 15:49:30.962] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
-[19Apr2026 15:49:30.964] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
-[19Apr2026 15:49:30.964] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
-[19Apr2026 15:49:32.149] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:overworld
-[19Apr2026 15:49:32.176] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:netherchunkgeneration
-[19Apr2026 15:49:32.185] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_rocky_gen
-[19Apr2026 15:49:32.189] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_savanna_gen
-[19Apr2026 15:49:32.193] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_nether
-[19Apr2026 15:49:32.203] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:skychunkgeneration
-[19Apr2026 15:49:32.232] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_forest_gen
-[19Apr2026 15:49:32.236] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_snow_gen
-[19Apr2026 15:49:32.240] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_jungle_gen
-[19Apr2026 15:49:32.247] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/minecraft:the_end
-[19Apr2026 15:49:32.251] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mushroom_gen
-[19Apr2026 15:49:32.255] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_desert_gen
-[19Apr2026 15:49:32.264] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_swamp_gen
-[19Apr2026 15:49:32.268] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_mountain_gen
-[19Apr2026 15:49:32.272] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_badlands_gen
-[19Apr2026 15:49:32.277] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[Dont crash i beg you]'/chunkbychunk:minecraft_overworld_plains_gen
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (Dont crash i beg you): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (netherchunkgeneration): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_rocky_gen): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_savanna_gen): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (skychunkgeneration): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_forest_gen): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_snow_gen): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_jungle_gen): All chunks are saved
-[19Apr2026 15:49:32.407] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_mushroom_gen): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_desert_gen): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_swamp_gen): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_mountain_gen): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_badlands_gen): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_plains_gen): All chunks are saved
-[19Apr2026 15:49:32.408] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved
+[20Apr2026 12:02:32.269] [main/INFO] [mixin/]: Compatibility level set to JAVA_21
+[20Apr2026 12:02:32.277] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgeclientdev' with arguments [--version, 21.1.180, --gameDir, ., --assetsDir, C:\Users\diamo\.gradle\caches\neoformruntime\assets, --assetIndex, 17]
+[20Apr2026 12:02:32.339] [main/WARN] [mixin/]: Reference map 'chunkbychunk.refmap.json' for chunkbychunk.mixins.json could not be read. If this is a development environment you can ignore this message
+[20Apr2026 12:02:35.063] [Datafixer Bootstrap/INFO] [com.mojang.datafixers.DataFixerBuilder/]: 229 Datafixer optimizations took 736 milliseconds
+[20Apr2026 12:02:35.115] [pool-8-thread-1/INFO] [MixinExtras|Service/]: Initializing MixinExtras via com.llamalad7.mixinextras.service.MixinExtrasServiceImpl(version=0.4.1).
+[20Apr2026 12:02:42.087] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[20Apr2026 12:02:42.090] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[20Apr2026 12:02:42.096] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[20Apr2026 12:02:42.099] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[20Apr2026 12:02:42.100] [main/WARN] [net.minecraft.commands.Commands/]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[20Apr2026 12:02:42.292] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/I:/ChunkByChunk-1.21.1-Port-NEOFORGE-1/build/moddev/artifacts/neoforge-21.1.180.jar%23189!/assets/.mcassetsroot' uses unexpected schema
+[20Apr2026 12:02:42.293] [Render thread/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/I:/ChunkByChunk-1.21.1-Port-NEOFORGE-1/build/moddev/artifacts/neoforge-21.1.180.jar%23189!/data/.mcassetsroot' uses unexpected schema
+[20Apr2026 12:02:42.344] [Render thread/INFO] [com.mojang.authlib.yggdrasil.YggdrasilAuthenticationService/]: Environment: Environment[sessionHost=https://sessionserver.mojang.com, servicesHost=https://api.minecraftservices.com, name=PROD]
+[20Apr2026 12:02:42.363] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Setting user: Dev
+[20Apr2026 12:02:42.540] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Backend library: LWJGL version 3.3.3+5
+[20Apr2026 12:02:42.905] [modloading-worker-0/INFO] [net.neoforged.neoforge.common.NeoForgeMod/NEOFORGE-MOD]: NeoForge mod loading, version 21.1.180, for MC 1.21.1
+[20Apr2026 12:02:43.075] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[20Apr2026 12:02:43.080] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 1.756 milliseconds
+[20Apr2026 12:02:44.263] [Render thread/INFO] [net.neoforged.neoforge.gametest.GameTestHooks/]: Enabled Gametest Namespaces: [chunkbychunk]
+[20Apr2026 12:02:44.460] [Render thread/INFO] [net.minecraft.server.packs.resources.ReloadableResourceManager/]: Reloading ResourceManager: vanilla, mod_resources, mod/chunkbychunk, mod/neoforge, mod/jei
+[20Apr2026 12:02:44.614] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [chunkbychunk] Starting version check at https://immortius.xyz/chunkbychunk/updates.json
+[20Apr2026 12:02:44.651] [Worker-Main-2/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_all_no_pua-15.1.05.hex, loading
+[20Apr2026 12:02:45.209] [Worker-Main-3/INFO] [net.minecraft.client.gui.font.providers.UnihexProvider/]: Found unifont_jp_patch-15.1.05.hex, loading
+[20Apr2026 12:02:46.248] [NeoForge Version Check/INFO] [net.neoforged.fml.VersionChecker/]: [chunkbychunk] Found status: BETA Current: 2.3.1 Target: null
+[20Apr2026 12:02:47.943] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:item.goat_horn.play
+[20Apr2026 12:02:47.944] [Render thread/WARN] [net.minecraft.client.sounds.SoundEngine/]: Missing sound for event: minecraft:entity.goat.screaming.horn_break
+[20Apr2026 12:02:48.036] [Render thread/INFO] [com.mojang.blaze3d.audio.Library/]: OpenAL initialized on device OpenAL Soft on Headphones (High Definition Audio Device)
+[20Apr2026 12:02:48.039] [Render thread/INFO] [net.minecraft.client.sounds.SoundEngine/SOUNDS]: Sound engine started
+[20Apr2026 12:02:48.292] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x4 minecraft:textures/atlas/blocks.png-atlas
+[20Apr2026 12:02:48.315] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/signs.png-atlas
+[20Apr2026 12:02:48.315] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/shield_patterns.png-atlas
+[20Apr2026 12:02:48.316] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x512x4 minecraft:textures/atlas/banner_patterns.png-atlas
+[20Apr2026 12:02:48.317] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x1024x4 minecraft:textures/atlas/armor_trims.png-atlas
+[20Apr2026 12:02:48.326] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 128x64x4 minecraft:textures/atlas/decorated_pot.png-atlas
+[20Apr2026 12:02:48.327] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x4 minecraft:textures/atlas/chest.png-atlas
+[20Apr2026 12:02:48.327] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/shulker_boxes.png-atlas
+[20Apr2026 12:02:48.327] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x4 minecraft:textures/atlas/beds.png-atlas
+[20Apr2026 12:02:48.647] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/particles.png-atlas
+[20Apr2026 12:02:48.650] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 512x256x0 minecraft:textures/atlas/paintings.png-atlas
+[20Apr2026 12:02:48.651] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x128x0 minecraft:textures/atlas/mob_effects.png-atlas
+[20Apr2026 12:02:48.651] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 64x64x0 minecraft:textures/atlas/map_decorations.png-atlas
+[20Apr2026 12:02:48.652] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 1024x512x0 minecraft:textures/atlas/gui.png-atlas
+[20Apr2026 12:02:48.696] [Render thread/WARN] [net.minecraft.client.renderer.ShaderInstance/]: Shader rendertype_entity_translucent_emissive could not find sampler named Sampler2 in the specified shader program.
+[20Apr2026 12:02:48.774] [Render thread/INFO] [net.neoforged.neoforge.client.entity.animation.json.AnimationLoader/]: Loaded 0 entity animations
+[20Apr2026 12:02:48.775] [Render thread/INFO] [net.minecraft.client.renderer.texture.TextureAtlas/]: Created: 256x256x0 jei:textures/atlas/gui.png-atlas
+[20Apr2026 12:02:55.231] [Worker-Main-6/INFO] [chunkbychunk/]: Registering resource reload listeners
+[20Apr2026 12:02:55.596] [Render thread/INFO] [net.minecraft.world.item.crafting.RecipeManager/]: Loaded 1290 recipes
+[20Apr2026 12:02:55.891] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 1399 advancements
+[20Apr2026 12:02:55.893] [Render thread/INFO] [chunkbychunk/]: Loading resources
+[20Apr2026 12:02:55.911] [Render thread/INFO] [chunkbychunk/]: Loaded 8 scanner data configs
+[20Apr2026 12:02:55.917] [Render thread/INFO] [chunkbychunk/]: Loaded 2 sky dimensions
+[20Apr2026 12:03:24.496] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Starting integrated minecraft server version 1.21.1
+[20Apr2026 12:03:24.497] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Generating keypair
+[20Apr2026 12:03:24.651] [Server thread/INFO] [chunkbychunk/]: Setting up sky dimensions
+[20Apr2026 12:03:24.652] [Server thread/INFO] [chunkbychunk/]: Setting up sky dimension for minecraft:the_nether
+[20Apr2026 12:03:24.653] [Server thread/INFO] [chunkbychunk/]: Setting up sky dimension for minecraft:overworld
+[20Apr2026 12:03:37.359] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Preparing start region for dimension minecraft:overworld
+[20Apr2026 12:03:39.480] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Apr2026 12:03:39.481] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Apr2026 12:03:39.481] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Apr2026 12:03:39.481] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Apr2026 12:03:39.481] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Preparing spawn area: 0%
+[20Apr2026 12:03:39.611] [Server thread/INFO] [net.neoforged.neoforge.server.permission.PermissionAPI/]: Successfully initialized permission handler neoforge:default_handler
+[20Apr2026 12:03:39.620] [progressListener/INFO] [net.minecraft.server.level.progress.LoggerChunkProgressListener/]: Time elapsed: 2251 ms
+[20Apr2026 12:03:39.838] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing view distance to 12, from 10
+[20Apr2026 12:03:39.838] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Changing simulation distance to 12, from 0
+[20Apr2026 12:03:40.743] [Server thread/WARN] [net.minecraft.server.PlayerAdvancements/]: Ignored advancement 'chunkbychunk:root' in progress file .\saves\New World\advancements\380df991-f603-344c-a090-369bad2a924a.json - it doesn't exist anymore?
+[20Apr2026 12:03:40.743] [Server thread/WARN] [net.minecraft.server.PlayerAdvancements/]: Ignored advancement 'chunkbychunk:worldforgeobtained' in progress file .\saves\New World\advancements\380df991-f603-344c-a090-369bad2a924a.json - it doesn't exist anymore?
+[20Apr2026 12:03:40.779] [Server thread/INFO] [net.minecraft.server.players.PlayerList/]: Dev[local:E:2ef05efc] logged in with entity id 11 at (-1539.5, 63.0, -1010.5)
+[20Apr2026 12:03:40.878] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev joined the game
+[20Apr2026 12:03:41.117] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI...
+[20Apr2026 12:03:41.130] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes...
+[20Apr2026 12:03:41.136] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering item subtypes took 5.202 milliseconds
+[20Apr2026 12:03:41.137] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes...
+[20Apr2026 12:03:41.139] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering fluid subtypes took 2.081 milliseconds
+[20Apr2026 12:03:41.142] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients...
+[20Apr2026 12:03:41.321] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering ingredients: jei:minecraft took 177.1 milliseconds
+[20Apr2026 12:03:41.321] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering ingredients took 178.0 milliseconds
+[20Apr2026 12:03:41.322] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients...
+[20Apr2026 12:03:41.322] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering extra ingredients took 282.9 microseconds
+[20Apr2026 12:03:41.323] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases...
+[20Apr2026 12:03:41.323] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering search ingredient aliases took 815.8 microseconds
+[20Apr2026 12:03:41.341] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info...
+[20Apr2026 12:03:41.341] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Mod Info took 385.0 microseconds
+[20Apr2026 12:03:41.394] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories...
+[20Apr2026 12:03:41.412] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering categories: jei:minecraft took 16.83 milliseconds
+[20Apr2026 12:03:41.426] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering categories took 30.31 milliseconds
+[20Apr2026 12:03:41.427] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions...
+[20Apr2026 12:03:41.431] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering vanilla category extensions took 2.414 milliseconds
+[20Apr2026 12:03:41.432] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts...
+[20Apr2026 12:03:41.433] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipe catalysts took 984.4 microseconds
+[20Apr2026 12:03:41.434] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry...
+[20Apr2026 12:03:41.445] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building recipe registry took 11.23 milliseconds
+[20Apr2026 12:03:41.446] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins...
+[20Apr2026 12:03:41.447] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering advanced plugins took 334.0 microseconds
+[20Apr2026 12:03:41.448] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes...
+[20Apr2026 12:03:41.694] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:minecraft took 245.3 milliseconds
+[20Apr2026 12:03:41.741] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering recipes: jei:internal took 38.55 milliseconds
+[20Apr2026 12:03:41.741] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes took 292.7 milliseconds
+[20Apr2026 12:03:41.748] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers...
+[20Apr2026 12:03:41.753] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering recipes transfer handlers took 3.476 milliseconds
+[20Apr2026 12:03:41.764] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime...
+[20Apr2026 12:03:41.770] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers...
+[20Apr2026 12:03:41.778] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering gui handlers took 8.238 milliseconds
+[20Apr2026 12:03:41.782] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime...
+[20Apr2026 12:03:41.784] [Render thread/INFO] [mezz.jei.gui.startup.JeiGuiStarter/]: Starting JEI GUI
+[20Apr2026 12:03:41.785] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list...
+[20Apr2026 12:03:41.815] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient list took 28.88 milliseconds
+[20Apr2026 12:03:41.815] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter...
+[20Apr2026 12:03:41.850] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Adding 1708 ingredients
+[20Apr2026 12:03:42.158] [Render thread/INFO] [mezz.jei.gui.ingredients.IngredientFilter/]: Added 1708 ingredients
+[20Apr2026 12:03:42.160] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building ingredient filter took 344.9 milliseconds
+[20Apr2026 12:03:42.244] [Render thread/INFO] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Registering Runtime: jei:neoforge_gui took 461.3 milliseconds
+[20Apr2026 12:03:42.245] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Registering Runtime took 462.2 milliseconds
+[20Apr2026 12:03:42.246] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Building runtime took 481.1 milliseconds
+[20Apr2026 12:03:42.246] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime...
+[20Apr2026 12:03:42.247] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime took 369.5 microseconds
+[20Apr2026 12:03:42.248] [Render thread/INFO] [mezz.jei.core.util.LoggedTimer/]: Starting JEI took 1.130 seconds
+[20Apr2026 12:03:42.264] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 2 advancements
+[20Apr2026 12:03:43.307] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[20Apr2026 12:03:43.336] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20Apr2026 12:03:43.372] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_mushroom_gen
+[20Apr2026 12:03:43.373] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:netherchunkgeneration
+[20Apr2026 12:03:43.373] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20Apr2026 12:03:43.374] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_swamp_gen
+[20Apr2026 12:03:43.375] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_forest_gen
+[20Apr2026 12:03:43.377] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20Apr2026 12:03:43.378] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_snow_gen
+[20Apr2026 12:03:43.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_savanna_gen
+[20Apr2026 12:03:43.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_jungle_gen
+[20Apr2026 12:03:43.379] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_desert_gen
+[20Apr2026 12:03:43.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_badlands_gen
+[20Apr2026 12:03:43.380] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_rocky_gen
+[20Apr2026 12:03:43.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:skychunkgeneration
+[20Apr2026 12:03:43.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_plains_gen
+[20Apr2026 12:03:43.381] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_mountain_gen
+[20Apr2026 12:03:49.706] [Server thread/INFO] [net.minecraft.client.server.IntegratedServer/]: Saving and pausing game...
+[20Apr2026 12:03:49.728] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20Apr2026 12:03:49.732] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_mushroom_gen
+[20Apr2026 12:03:49.732] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:netherchunkgeneration
+[20Apr2026 12:03:49.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20Apr2026 12:03:49.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_swamp_gen
+[20Apr2026 12:03:49.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_forest_gen
+[20Apr2026 12:03:49.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20Apr2026 12:03:49.733] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_snow_gen
+[20Apr2026 12:03:49.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_savanna_gen
+[20Apr2026 12:03:49.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_jungle_gen
+[20Apr2026 12:03:49.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_desert_gen
+[20Apr2026 12:03:49.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_badlands_gen
+[20Apr2026 12:03:49.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_rocky_gen
+[20Apr2026 12:03:49.734] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:skychunkgeneration
+[20Apr2026 12:03:49.735] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_plains_gen
+[20Apr2026 12:03:49.735] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_mountain_gen
+[20Apr2026 12:04:29.676] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 16 advancements
+[20Apr2026 12:04:35.614] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev has made the advancement [Stone Age]
+[20Apr2026 12:04:35.632] [Render thread/INFO] [net.minecraft.client.gui.components.ChatComponent/]: [System] [CHAT] Dev has made the advancement [Stone Age]
+[20Apr2026 12:04:35.676] [Render thread/INFO] [net.minecraft.advancements.AdvancementTree/]: Loaded 34 advancements
+[20Apr2026 12:04:48.172] [Render thread/INFO] [net.minecraft.client.Minecraft/]: Stopping!
+[20Apr2026 12:04:48.175] [Render thread/INFO] [mezz.jei.library.startup.JeiStarter/]: Stopping JEI
+[20Apr2026 12:04:48.176] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable...
+[20Apr2026 12:04:48.177] [Render thread/INFO] [mezz.jei.neoforge.plugins.neoforge.NeoForgeGuiPlugin/]: Stopping JEI GUI
+[20Apr2026 12:04:48.180] [Render thread/INFO] [mezz.jei.library.load.PluginCaller/]: Sending Runtime Unavailable took 3.274 milliseconds
+[20Apr2026 12:04:48.207] [Server thread/INFO] [net.minecraft.server.network.ServerGamePacketListenerImpl/]: Dev lost connection: Disconnected
+[20Apr2026 12:04:48.207] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Dev left the game
+[20Apr2026 12:04:48.220] [Server thread/INFO] [net.minecraft.server.network.ServerCommonPacketListenerImpl/]: Stopping singleplayer server as player logged out
+[20Apr2026 12:04:48.257] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Stopping server
+[20Apr2026 12:04:48.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving players
+[20Apr2026 12:04:48.258] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving worlds
+[20Apr2026 12:04:48.582] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:overworld
+[20Apr2026 12:04:48.830] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_mushroom_gen
+[20Apr2026 12:04:48.881] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:netherchunkgeneration
+[20Apr2026 12:04:48.958] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_end
+[20Apr2026 12:04:49.022] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_swamp_gen
+[20Apr2026 12:04:49.072] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_forest_gen
+[20Apr2026 12:04:49.122] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/minecraft:the_nether
+[20Apr2026 12:04:49.190] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_snow_gen
+[20Apr2026 12:04:49.240] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_savanna_gen
+[20Apr2026 12:04:49.290] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_jungle_gen
+[20Apr2026 12:04:49.339] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_desert_gen
+[20Apr2026 12:04:49.390] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_badlands_gen
+[20Apr2026 12:04:49.440] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_rocky_gen
+[20Apr2026 12:04:49.490] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:skychunkgeneration
+[20Apr2026 12:04:49.540] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_plains_gen
+[20Apr2026 12:04:49.590] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: Saving chunks for level 'ServerLevel[New World]'/chunkbychunk:minecraft_overworld_mountain_gen
+[20Apr2026 12:04:49.739] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (New World): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_mushroom_gen): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (netherchunkgeneration): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_swamp_gen): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_forest_gen): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_snow_gen): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_savanna_gen): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_jungle_gen): All chunks are saved
+[20Apr2026 12:04:49.740] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_desert_gen): All chunks are saved
+[20Apr2026 12:04:49.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_badlands_gen): All chunks are saved
+[20Apr2026 12:04:49.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_rocky_gen): All chunks are saved
+[20Apr2026 12:04:49.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (skychunkgeneration): All chunks are saved
+[20Apr2026 12:04:49.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_plains_gen): All chunks are saved
+[20Apr2026 12:04:49.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage (minecraft_overworld_mountain_gen): All chunks are saved
+[20Apr2026 12:04:49.741] [Server thread/INFO] [net.minecraft.server.MinecraftServer/]: ThreadedAnvilChunkStorage: All dimensions are saved

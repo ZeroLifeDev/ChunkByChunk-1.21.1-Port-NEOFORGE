@@ -8,6 +8,7 @@ import net.minecraft.client.gui.components.CycleButton;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.events.GuiEventListener;
 import net.minecraft.client.gui.narration.NarratableEntry;
+import net.minecraft.client.gui.narration.NarrationElementOutput;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 import xyz.immortius.chunkbychunk.common.ChunkByChunkConstants;
@@ -23,6 +24,19 @@ import java.util.function.Supplier;
  * A widget providing a scrollable list of configuration options for ChunkByChunk
  */
 public class SettingListWidget extends ContainerObjectSelectionList<SettingListWidget.SettingEntry> {
+
+    public static abstract class SettingEntry extends ContainerObjectSelectionList.Entry<SettingEntry> {
+        public void tick() {
+        }
+
+        public void reset() {
+        }
+    }
+
+    @Override
+    public SettingEntry getFocused() {
+        return (SettingEntry) super.getFocused();
+    }
 
     private EditBox lastFocused = null;
     private int rowWidth;
@@ -341,7 +355,7 @@ public class SettingListWidget extends ContainerObjectSelectionList<SettingListW
 
         @Override
         public List<? extends NarratableEntry> narratables() {
-            return Collections.emptyList();
+            return Collections.singletonList(widget);
         }
 
         @Override
@@ -349,14 +363,4 @@ public class SettingListWidget extends ContainerObjectSelectionList<SettingListW
             return Collections.singletonList(widget);
         }
     }
-
-    public static abstract class SettingEntry extends Entry<SettingEntry> {
-
-        public void tick() {
-        }
-
-        public void reset() {
-        }
-    }
-
 }

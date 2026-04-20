@@ -89,6 +89,9 @@ public abstract class BaseFueledBlockEntity extends BaseContainerBlockEntity imp
         if (remainingFuel == 0 && isFuel(fuelItem)) {
             chargedFuel = remainingFuel = getFuelValue(fuelItem);
             fuelItem.shrink(1);
+            if (fuelItem.isEmpty()) {
+                items.set(fuelSlot, ItemStack.EMPTY);
+            }
             return true;
         }
         return false;
@@ -117,11 +120,14 @@ public abstract class BaseFueledBlockEntity extends BaseContainerBlockEntity imp
      * @return Is this item fuel
      */
     public boolean isFuel(ItemStack itemStack) {
+        if (itemStack.isEmpty()) {
+            return false;
+        }
         if (itemFuel.getOrDefault(itemStack.getItem(), () -> 0).get() > 0) {
             return true;
         }
         for (Map.Entry<TagKey<Item>, FuelValueSupplier> entry : tagFuel.entrySet()) {
-            if (itemStack.is(entry.getKey())) {
+            if (itemStack.is(entry.getKey()) && entry.getValue().get() > 0) {
                 return true;
             }
         }
@@ -133,16 +139,20 @@ public abstract class BaseFueledBlockEntity extends BaseContainerBlockEntity imp
      * @return How much fuel does this item provide (0 if not fuel)
      */
     public int getFuelValue(ItemStack itemStack) {
+        if (itemStack.isEmpty()) {
+            return 0;
+        }
         FuelValueSupplier fuelValueSupplier = itemFuel.get(itemStack.getItem());
-        if (fuelValueSupplier == null) {
+        if (fuelValueSupplier == null || fuelValueSupplier.get() <= 0) {
             for (Map.Entry<TagKey<Item>, FuelValueSupplier> entry : tagFuel.entrySet()) {
-                if (itemStack.is(entry.getKey())) {
+                if (itemStack.is(entry.getKey()) && entry.getValue().get() > 0) {
                     fuelValueSupplier = entry.getValue();
+                    break;
                 }
             }
         }
 
-        if (fuelValueSupplier != null) {
+        if (fuelValueSupplier != null && fuelValueSupplier.get() > 0) {
             return fuelValueSupplier.get();
         }
         return 0;
